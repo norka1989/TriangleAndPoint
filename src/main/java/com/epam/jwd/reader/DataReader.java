@@ -16,7 +16,7 @@ import java.util.List;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-public class DataReader implements Readable {
+public class  DataReader implements Readable {
     private static final Logger LOG = LogManager.getLogger(DataReader.class);
     private static final String FILE_IS_NOT_FOUND_ERROR = "The file <%s> is not found";
     private static final String OPENING_FILE = "An attempt to open file <%s>";
@@ -69,8 +69,6 @@ public class DataReader implements Readable {
                     Point p2 = new Point(intCoordinates[2], intCoordinates[3]);
                     Point p3 = new Point(intCoordinates[4], intCoordinates[5]);
                     create(p1, p2, p3);
-                } else {
-                    throw new IncorrectDatesException(INCORRECT_DATES_IN_THE_LINE);
                 }
             }
         } catch (Exception e) {

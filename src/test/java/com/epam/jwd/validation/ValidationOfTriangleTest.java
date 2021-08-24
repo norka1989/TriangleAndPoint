@@ -23,8 +23,10 @@ class ValidationOfTriangleTest {
     private static Stream<Arguments> listOfDatesForCreatingTriangle(){
             return Stream.of(
                     arguments(new Point(-3,3),new Point(6,-3),new Point(22,6)),
-                    arguments(new Point(-3,3),new Point(6,-3),new Point(22,0)),
-                    arguments(new Point(-3,3),new Point(6,-3),new Point(22,6))
+                    arguments(new Point(-3,3),new Point(90,-3),new Point(3,0)),
+                    arguments(new Point(-3,3),new Point(0,0),new Point(4,4)),
+                    arguments(new Point(1,1),new Point(0,0),new Point(4,4)),
+                    arguments(new Point(2,1),new Point(-1,-3),new Point(1,6))
             );
     }
 

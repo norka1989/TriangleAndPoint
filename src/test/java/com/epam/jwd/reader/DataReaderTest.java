@@ -18,7 +18,7 @@ class DataReaderTest {
     Point p1=new Point(2,3);
     Point p2=new Point(0,4);
     Point p3=new Point(-1,1);
-    static String FILE_NAME="points.txt";
+    static String FILE_NAME="src/test/resources/points.txt";
 
     @Test
     void createListFromFile_always() {
@@ -47,7 +47,6 @@ class DataReaderTest {
           //  triangles.add(triangle);
         }
        // DataReader.getInstance().delete(triangles);
-
         //assertTrue(triangles.isEmpty());
 
     }
