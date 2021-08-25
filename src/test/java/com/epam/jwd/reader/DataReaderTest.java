@@ -21,14 +21,14 @@ class DataReaderTest {
     static String FILE_NAME="src/test/resources/points.txt";
 
     @Test
-    void createListFromFile_always() {
+    public void createListFromFile_always() {
         List triangles=DataReader.getInstance().createListFromFile(FILE_NAME);
 
         assertFalse(triangles.isEmpty());
     }
 
     @Test
-    void create_addTriangleInList_always() {
+    public void create_addTriangleInList_always() {
         Triangle triangle=new Triangle(p1,p2,p3);
         ValidationOfTriangle validOfTriangle=new ValidationOfTriangle(p1,p2,p3);
 
@@ -37,19 +37,4 @@ class DataReaderTest {
         assertFalse(triangles.isEmpty());
         assertEquals(triangle, triangles.get(0));
     }
-
-    @Test
-    void delete_deleteListOfTriangles_always() {
-        Triangle triangle=new Triangle(p1,p2,p3);
-        ValidationOfTriangle validOfTriangle=new ValidationOfTriangle(p1,p2,p3);
-
-        if(validOfTriangle.existenceOfATriangle(p1,p2,p3)){
-          //  triangles.add(triangle);
-        }
-       // DataReader.getInstance().delete(triangles);
-        //assertTrue(triangles.isEmpty());
-
-    }
-
-
 }

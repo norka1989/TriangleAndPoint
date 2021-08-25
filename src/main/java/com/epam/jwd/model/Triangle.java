@@ -2,7 +2,7 @@ package com.epam.jwd.model;
 
 import java.util.Objects;
 
-public class  Triangle {
+public class Triangle {
     private Point p1;
     private Point p2;
     private Point p3;

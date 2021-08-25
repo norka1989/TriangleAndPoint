@@ -7,6 +7,8 @@ public class DataValidation {
     private static final Logger LOG = LogManager.getLogger(DataValidation.class);
     private static final String REGEX = "-?\\d+\\.-?\\d+\\s-?\\d+\\.-?\\d+\\s-?\\d+\\.-?\\d+";
 
+    public DataValidation(){}
+
     public boolean isCorrectData(String line) {
         if (line.matches(REGEX)) {
             LOG.info("The dates from the line are correct");

@@ -16,7 +16,7 @@ import java.util.List;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-public class  DataReader implements Readable {
+public class DataReader implements Readable {
     private static final Logger LOG = LogManager.getLogger(DataReader.class);
     private static final String FILE_IS_NOT_FOUND_ERROR = "The file <%s> is not found";
     private static final String OPENING_FILE = "An attempt to open file <%s>";
@@ -56,7 +56,7 @@ public class  DataReader implements Readable {
         read(FileName);
         String line;
         int numberOfLine = 0;
-        try {
+        try  {
             while ((line = reader.readLine()) != null) {
                 numberOfLine++;
                 if (valid.isCorrectData(line)) {
@@ -92,7 +92,7 @@ public class  DataReader implements Readable {
 
     @Override
     public void delete(List list) {
-        list.removeAll(list);                //можно ли так сделать???????????????
+        list.removeAll(list);
         LOG.info("The list of triangles is empty now");
     }
 

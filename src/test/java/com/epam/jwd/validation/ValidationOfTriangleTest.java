@@ -15,7 +15,7 @@ class ValidationOfTriangleTest {
 
     @ParameterizedTest
     @MethodSource("listOfDatesForCreatingTriangle")
-    void existenceOfATriangle_chekOfExistence_always(Point p1,Point p2,Point p3) {
+    public void existenceOfATriangle_chekOfExistence_always(Point p1,Point p2,Point p3) {
         ValidationOfTriangle valid=new ValidationOfTriangle(p1,p2,p3);
         assertTrue(valid.existenceOfATriangle(p1,p2,p3));
     }
